@@ -8,3 +8,7 @@ output "public_route_table_ids" {
   value = ["${aws_route_table.rtb_public.id}"]
 }
 
+
+output "ec2_machines" {
+  value = aws_instance.testInstance.*.arn     
+}

@@ -52,3 +52,28 @@ Variables are read from variables.tf file. If not specified in that file, parame
 ![instance](./img/aws-1.png)
 
 ## **Task 2 :** Automate multiple EC2 instances Creation using Terraform on AWS Cloud
+
+To create multiple ec2 instance in AWS account using terraform code you can edit the variables file.
+
+```javascript
+  variable "instance_count" {
+  description = "Number of instances to be created"
+  default     = "1"
+  type = string
+}
+
+
+```
+
+**Screenshot of terraform plan**
+
+![plan](./img/plan-20.png)
+**Screenshot of terraform apply**
+
+![apply](./img/apply-20.png)
+**Screenshot of running instance**
+
+![instance](./img/apply-20a.png)
+![instance](./img/apply-20b.png)
+
+## **Task 3 :** Deploy a cluster 0f 6 web servers (for high availability use auto scaling)
